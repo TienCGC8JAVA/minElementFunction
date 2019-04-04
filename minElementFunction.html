@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị nhỏ nhất trong Mảng</title>
+</head>
+<body>
+    <script>
+        let arr1 = [2,5,-2,-5,1,7,8,4,9,3,6];
+        let min1 = minArray(arr1);
+        alert(min1);
+        let arr2 = [45,27,87,96,79,68];
+        let min2 = minArray(arr2);
+        alert(min2);
+        let arr3 = [0,0,0,0,0,0,0,0,0];
+        let min3 = minArray(arr3);
+        alert(min3);
+        let arr4 = [];
+        let min4 = minArray(arr4);
+        alert(min4);
+        function minArray(arr)
+        {
+            if (arr.length == 0) return  -1;
+            let min = arr[0];
+            for (let i = 1; i < arr.length; i++)
+            {
+                if (arr[i] < min) min = arr[i];
+            }
+            return min;
+        }
+    </script>
+</body>
+</html>
